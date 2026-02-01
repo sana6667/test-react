@@ -1,5 +1,5 @@
 name: testing
-on: push
+on: [push, workflow_dispatch ]
 jobs:
     my_job:
         runs-on: ubuntu-lanest
