@@ -1,0 +1,12 @@
+name: testing
+on: push
+jobs:
+    my_job:
+        runs-on: ubuntu-lanest
+        steps:
+            - name: acion
+              uses: actions/checkout@v4
+            - name: ghio
+              run: npm ci
+            - name: jfdo
+              run: npm run test
