@@ -7,6 +7,6 @@ jobs:
             - name: acion
               uses: actions/checkout@v4
             - name: ghio
-              run: npm ci
+              run: npm install
             - name: jfdo
               run: npm run test
