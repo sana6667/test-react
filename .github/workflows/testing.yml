@@ -2,7 +2,7 @@ name: testing
 on: [push, workflow_dispatch ]
 jobs:
     my_job:
-        runs-on: ubuntu-lanest
+        runs-on: ubuntu-latest
         steps:
             - name: acion
               uses: actions/checkout@v4
