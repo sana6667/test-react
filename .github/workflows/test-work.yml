@@ -1,6 +1,6 @@
 name: test context
 on:
-    push:
+    pull_request:
         branches:
             - main
 jobs:
