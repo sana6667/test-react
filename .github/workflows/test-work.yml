@@ -1,8 +1,11 @@
 name: test context
-on: workflow_dispatch
+on:
+    workflow_dispatch:
+    pull_request: 
+        types: [opened, edited, reopened]
 jobs:
     jo_1:
         runs-on: ubuntu-latest
         steps:
             - name: context
-              run: echo "${{ toJson(github) }}"
+              run: echo "${{ toJson(github.event) }}"
